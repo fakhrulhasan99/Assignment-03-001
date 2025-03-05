@@ -7,6 +7,9 @@ export default {
         adlam: ['"ADLaM Display"', 'cursive'],
         sora: ['"Sora"', 'sans-serif'],
       },
+      backgroundImage: {
+        'bg-cat': "url('/images/cat-big.png')",
+      }
     },
   },
   plugins: [],
