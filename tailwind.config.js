@@ -9,7 +9,7 @@ export default {
       },
       backgroundImage: {
         'bg-cat': "url('/images/cat-big.png')",
-      }
+      },
     },
   },
   plugins: [],
