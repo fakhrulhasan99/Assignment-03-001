@@ -17,11 +17,19 @@
             font-family: "Sora", sans-serif;
             font-style: normal;
         }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            overflow-x: hidden;
+        }
 
     </style>
     <title>PAWSHOP-3-001</title>
 </head>
-<body>
+<body class="container mx-auto">
     <header>
         <!-- navbar section -->
         <div class=" bg-[#FFF9F4] flex justify-between items-center sora py-3 px-4 lg:py-7 lg:px-32">
@@ -55,41 +63,41 @@
                 <button class="sora bg-yellow-300 px-7 py-3 rounded-lg">Find a pet</button>
             </div>
             <div>
-                <img class="relative -top-14 lg:-top-36 w-full" src="images/cat-big.png" alt="">
+                <img class="relative -top-14 lg:-top-36 w-" src="images/cat-big.png" alt="">
             </div>
         </div>
         <!-- catagory section -->
-        <div class="px-4 lg:px-32">
+        <div class="container mx-auto px-4 lg:px-32">
             <div>
                 <h3 class="adlam text-2xl">Browse By Categories</h3>
             </div>
-            <div class="container grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3 mx-auto w-full py-8">
-                <div class="bg-yellow-200 h-56 w-44 lg:h-44 lg:w-32  rounded-xl flex flex-col items-center justify-center gap-y-4">
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3 w-full py-8">
+                <div class="bg-yellow-200 h-52 md:h-56 lg:h-44   rounded-xl flex flex-col items-center justify-center gap-y-4">
                     <img class="bg-white p-6 lg:p-4 rounded-full" src="images/dog-cartoon.png" alt="dog">
                     <h4 class="adlam text-xl">Dog</h4>
                     <p class="sora">3 items</p>
                 </div>
-                <div class="bg-yellow-200 h-56 w-44 lg:h-44 lg:w-32  rounded-xl flex flex-col items-center justify-center gap-y-4">
+                <div class="bg-yellow-200 h-52 md:h-56 lg:h-44 rounded-xl flex flex-col items-center justify-center gap-y-4">
                     <img class="bg-white p-6 lg:p-4 rounded-full" src="images/fish-cartoon.png" alt="fish">
                     <h4 class="adlam text-xl">Fish</h4>
                     <p class="sora">3 items</p>
                 </div>
-                <div class="bg-yellow-200 h-56 w-44 lg:h-44 lg:w-32  rounded-xl flex flex-col items-center justify-center gap-y-4">
+                <div class="bg-yellow-200 h-52 md:h-56 lg:h-44 rounded-xl flex flex-col items-center justify-center gap-y-4">
                     <img class="bg-white p-6 lg:p-4 rounded-full" src="images/cat-cartoon.png" alt="cat">
                     <h4 class="adlam text-xl">Cat</h4>
                     <p class="sora">3 items</p>
                 </div>
-                <div class="bg-yellow-200 h-56 w-44 lg:h-44 lg:w-32  rounded-xl flex flex-col items-center justify-center gap-y-4">
+                <div class="bg-yellow-200 h-52 md:h-56 lg:h-44   rounded-xl flex flex-col items-center justify-center gap-y-4">
                     <img class="bg-white p-6 lg:p-4 rounded-full" src="images/bird-cartoon.png" alt="bird">
                     <h4 class="adlam text-xl">Bird</h4>
                     <p class="sora">3 items</p>
                 </div>
-                <div class="bg-yellow-200 h-56 w-44 lg:h-44 lg:w-32  rounded-xl flex flex-col items-center justify-center gap-y-4">
+                <div class="bg-yellow-200 h-52 md:h-56 lg:h-44   rounded-xl flex flex-col items-center justify-center gap-y-4">
                     <img class="bg-white p-6 lg:p-4 rounded-full" src="images/mouse-cartoon.png" alt="mouse">
                     <h4 class="adlam text-xl">Small pet</h4>
                     <p class="sora">3 items</p>
                 </div>
-                <div class="bg-yellow-200 h-56 w-44 lg:h-44 lg:w-32  rounded-xl flex flex-col items-center justify-center gap-y-4">
+                <div class="bg-yellow-200 h-52 md:h-56 lg:h-44   rounded-xl flex flex-col items-center justify-center gap-y-4">
                     <img class="bg-white p-6 lg:p-4 rounded-full" src="images/rabbit-cartoon.png" alt="rabbit">
                     <h4 class="adlam text-xl">Rabbit</h4>
                     <p class="sora">2 items</p>
@@ -98,22 +106,145 @@
             </div>
         </div>
         <!-- trending section -->
-        <div class="bg-[#FFF9F4] px-4">
+        <div class="bg-[#FFF9F4] px-4 lg:px-32">
             <div>
                 <h3 class="adlam text-4xl">Trending Pet Products</h3>
             </div>
-            <div>
-                <div class="bg-[#F9DF8A] my-8 rounded-2xl px-5">
+            <div class="lg:flex">
+                <div class="bg-[#F9DF8A] my-8 rounded-2xl px-5 ">
                     <div class="relative top-11">
                         <h4 class="adlam text-4xl">T-Shirt For Dogs</h4>
                         <p class="sora relative top-7">Discover a world of treats, toys and <br> essentials handpicked for</p>
                         <button class="bg-white relative top-14 px-6 py-2 rounded-lg">Shop Now</button>
                     </div>
-                    <img class="relative -right-1/2 -top-7" src="images/cute-pet-small.png" alt="">
+                    <img class="relative -right-32 w-1/2" src="images/cute-pet-small.png" alt="">
                 </div>
-                <div></div>
+                <div class="grid grid-cols-2 lg:grid-cols-3 gap-3 lg:py-8 lg:pl-4">
+                    <div class="bg-white border-2 rounded-xl flex gap-3 items-center p-3">
+                        <div><img class="bg-orange-100 rounded-lg p-3" src="images/pet-couch.png" alt="pet-couch"></div>
+                        <div>
+                            <div class="flex gap-2">
+                                <div><i class="fa-solid fa-star text-yellow-400"></i></div>
+                                <div class="sora">4.5</div>
+                            </div>
+                            <div><h4 class="sora font-semibold">Pet Bed</h4></div>
+                            <div><p class="sora">$39.99</p></div>
+                        </div>
+                    </div>
+                    <div class="bg-white border-2 rounded-xl flex gap-3 items-center p-3">
+                        <div><img class="bg-orange-100 rounded-lg p-3" src="images/pet-couch.png" alt="pet-couch"></div>
+                        <div>
+                            <div class="flex gap-2">
+                                <div><i class="fa-solid fa-star text-yellow-400"></i></div>
+                                <div class="sora">4.5</div>
+                            </div>
+                            <div><h4 class="sora font-semibold">Pet Bed</h4></div>
+                            <div><p class="sora">$39.99</p></div>
+                        </div>
+                    </div>
+                    <div class="bg-white border-2 rounded-xl flex gap-3 items-center p-3">
+                        <div><img class="bg-orange-100 rounded-lg p-3" src="images/pet-couch.png" alt="pet-couch"></div>
+                        <div>
+                            <div class="flex gap-2">
+                                <div><i class="fa-solid fa-star text-yellow-400"></i></div>
+                                <div class="sora">4.5</div>
+                            </div>
+                            <div><h4 class="sora font-semibold">Pet Bed</h4></div>
+                            <div><p class="sora">$39.99</p></div>
+                        </div>
+                    </div>
+                    <div class="bg-white border-2 rounded-xl flex gap-3 items-center p-3">
+                        <div><img class="bg-orange-100 rounded-lg p-3" src="images/pet-couch.png" alt="pet-couch"></div>
+                        <div>
+                            <div class="flex gap-2">
+                                <div><i class="fa-solid fa-star text-yellow-400"></i></div>
+                                <div class="sora">4.5</div>
+                            </div>
+                            <div><h4 class="sora font-semibold">Pet Bed</h4></div>
+                            <div><p class="sora">$39.99</p></div>
+                        </div>
+                    </div>
+                    <div class="bg-white border-2 rounded-xl flex gap-3 items-center p-3">
+                        <div><img class="bg-orange-100 rounded-lg p-3" src="images/pet-couch.png" alt="pet-couch"></div>
+                        <div>
+                            <div class="flex gap-2">
+                                <div><i class="fa-solid fa-star text-yellow-400"></i></div>
+                                <div class="sora">4.5</div>
+                            </div>
+                            <div><h4 class="sora font-semibold">Pet Bed</h4></div>
+                            <div><p class="sora">$39.99</p></div>
+                        </div>
+                    </div>
+                    <div class="bg-white border-2 rounded-xl flex gap-3 items-center p-3">
+                        <div><img class="bg-orange-100 rounded-lg p-3" src="images/pet-couch.png" alt="pet-couch"></div>
+                        <div>
+                            <div class="flex gap-2">
+                                <div><i class="fa-solid fa-star text-yellow-400"></i></div>
+                                <div class="sora">4.5</div>
+                            </div>
+                            <div><h4 class="sora font-semibold">Pet Bed</h4></div>
+                            <div><p class="sora">$39.99</p></div>
+                        </div>
+                    </div>
+                    <div class="bg-white border-2 rounded-xl flex gap-3 items-center p-3">
+                        <div><img class="bg-orange-100 rounded-lg p-3" src="images/pet-couch.png" alt="pet-couch"></div>
+                        <div>
+                            <div class="flex gap-2">
+                                <div><i class="fa-solid fa-star text-yellow-400"></i></div>
+                                <div class="sora">4.5</div>
+                            </div>
+                            <div><h4 class="sora font-semibold">Pet Bed</h4></div>
+                            <div><p class="sora">$39.99</p></div>
+                        </div>
+                    </div>
+                    <div class="bg-white border-2 rounded-xl flex gap-3 items-center p-3">
+                        <div><img class="bg-orange-100 rounded-lg p-3" src="images/pet-couch.png" alt="pet-couch"></div>
+                        <div>
+                            <div class="flex gap-2">
+                                <div><i class="fa-solid fa-star text-yellow-400"></i></div>
+                                <div class="sora">4.5</div>
+                            </div>
+                            <div><h4 class="sora font-semibold">Pet Bed</h4></div>
+                            <div><p class="sora">$39.99</p></div>
+                        </div>
+                    </div>
+                    <div class="bg-white border-2 rounded-xl hidden lg:flex gap-3 items-center p-3">
+                        <div><img class="bg-orange-100 rounded-lg p-3" src="images/pet-couch.png" alt="pet-couch"></div>
+                        <div>
+                            <div class="flex gap-2">
+                                <div><i class="fa-solid fa-star text-yellow-400"></i></div>
+                                <div class="sora">4.5</div>
+                            </div>
+                            <div><h4 class="sora font-semibold">Pet Bed</h4></div>
+                            <div><p class="sora">$39.99</p></div>
+                        </div>
+                    </div>
+                    
+                </div>
             </div>
-        </div> 
+        </div>
+        <!-- everyday offer section -->
+        <div>
+            <div>
+                <h3>Everyday low Price</h3>
+            </div>
+            <div>
+                <div class="flex items-center bg-gradient-to-r from-[#F8CCFB] to-[#ACD2FD]">
+                    <div>
+                        <p class="sora text-xl">Under Price</p>
+                        <h4 class="adlam text-3xl">Pet Grooming Mitt</h4>
+                        <p class="adlam text-white text-2xl">(Easy Hair Removal)</p>
+                        <h2 class="adlam text-6xl">$7.99</h2>
+                    </div>
+                    <div>
+                        <img src="images/cute-dog-mid.png" alt="">
+                    </div>
+                </div>
+                <div>
+                    
+                </div>
+            </div>
+        </div>
     </main>
 </body>
 </html>
