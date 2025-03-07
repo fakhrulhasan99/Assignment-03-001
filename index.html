@@ -32,7 +32,7 @@
 <body class="container mx-auto">
     <header>
         <!-- navbar section -->
-        <div class=" bg-[#FFF9F4] flex justify-between items-center sora py-3 px-4 lg:py-7 lg:px-32">
+        <div class=" bg-[#FFF9F4] flex justify-between items-center sora py-3 px-4 lg:py-7 lg:px-32 w-full">
             
             <div class="flex gap-3 items-center">
                 <img src="images/logo-header.png" alt="Logo">
@@ -56,7 +56,7 @@
     </header>
     <main>
         <!-- banner section -->
-        <div class="mx-auto lg:px-32">
+        <div class="mx-auto lg:mx-32">
             <div class="px-4 relative top-8 lg:top-20 z-10">
                 <h2 class="adlam text-3xl">Pamper Your Pet, <br> Because They Deserve <br> the Best</h2>
                 <p class="sora text-sm py-3 text-slate-600">Discover a world of treats, toys, and <br class="lg:hidden"> essentials handpicked for your furry <br> friends. Shop now and make tails wag with <br class="lg:hidden"> joy!</p>
@@ -106,20 +106,20 @@
             </div>
         </div>
         <!-- trending section -->
-        <div class="bg-[#FFF9F4] px-4 lg:px-32">
+        <div class="bg-[#fff2e7e5] px-4 lg:px-0 lg:mx-32 rounded-xl">
             <div>
                 <h3 class="adlam text-4xl">Trending Pet Products</h3>
             </div>
             <div class="lg:flex">
-                <div class="bg-[#F9DF8A] my-8 rounded-2xl px-5 ">
+                <div class="bg-[#F9DF8A] my-8 rounded-2xl px-5 relative lg:w-3/5">
                     <div class="relative top-11">
                         <h4 class="adlam text-4xl">T-Shirt For Dogs</h4>
-                        <p class="sora relative top-7">Discover a world of treats, toys and <br> essentials handpicked for</p>
+                        <p class="sora relative top-7">Discover a world of treats, toys and <br> essentials handpicked <br> for your pets</p>
                         <button class="bg-white relative top-14 px-6 py-2 rounded-lg">Shop Now</button>
                     </div>
-                    <img class="relative -right-32 w-1/2" src="images/cute-pet-small.png" alt="">
+                    <img class="relative -right-32 lg:absolute lg:w-3/5 lg:-right-4 lg:top-36 xl:top-0 xl:-right-8 2xl:-top-20" src="images/cute-pet-small.png" alt="">
                 </div>
-                <div class="grid grid-cols-2 lg:grid-cols-3 gap-3 lg:py-8 lg:pl-4">
+                <div class="grid grid-cols-2 lg:grid-cols-3 gap-3 lg:py-8 lg:pl-4 w-full">
                     <div class="bg-white border-2 rounded-xl flex gap-3 items-center p-3">
                         <div><img class="bg-orange-100 rounded-lg p-3" src="images/pet-couch.png" alt="pet-couch"></div>
                         <div>
@@ -224,25 +224,41 @@
             </div>
         </div>
         <!-- everyday offer section -->
-        <div>
+        <div class="px-4 lg:px-32">
             <div>
-                <h3>Everyday low Price</h3>
+                <h3 class="adlam text-2xl py-8">Everyday low Price</h3>
             </div>
-            <div>
-                <div class="flex items-center bg-gradient-to-r from-[#F8CCFB] to-[#ACD2FD]">
-                    <div>
-                        <p class="sora text-xl">Under Price</p>
-                        <h4 class="adlam text-3xl">Pet Grooming Mitt</h4>
-                        <p class="adlam text-white text-2xl">(Easy Hair Removal)</p>
-                        <h2 class="adlam text-6xl">$7.99</h2>
+            <div class="flex flex-col gap-y-6 lg:gap-0 lg:flex-row lg:gap-x-6">
+                <div class="relative flex flex-col lg:flex-row bg-gradient-to-r rounded-xl from-[#F8CCFB] to-[#ACD2FD]">
+                    <div class=" px-9 lg:w-4/5">
+                        <p class="sora text-xl hidden lg:flex relative lg:top-16">Under Price</p>
+                        <h4 class="adlam text-2xl absolute top-9 lg:top-24">Pet Grooming Mitt</h4>
+                        <p class="adlam absolute top-32 text-white text-xl hidden lg:flex">(Easy Hair Removal)</p>
+                        <h2 class="adlam text-4xl text-white lg:text-black relative top-20 lg:top-36">$7.99</h2>
                     </div>
                     <div>
-                        <img src="images/cute-dog-mid.png" alt="">
+                        <img class="relative w-3/4 lg:w-full lg:py-3 top-6 -right-28 lg:-right-5" src="images/cute-dog-mid.png" alt="">
                     </div>
                 </div>
-                <div>
-                    
+                <div class="relative flex flex-col lg:flex-row bg-gradient-to-r rounded-xl from-[#FFF9F4] to-[#F9DF8A]">
+                    <div class="px-9">
+                        <h4 class="adlam text-2xl absolute top-9">T-Shirt for Dogs</h4>
+                        <h2 class="adlam text-4xl text-yellow-400  relative top-20">$7.99</h2>
+                    </div>
+                    <div>
+                        <img class="relative top-3 -right-20 lg:top-20 xl:top-2 xl:right-0 lg:right-5 w-3/4 lg:w-full" src="images/cute-pet-mid.png" alt="">
+                    </div>
                 </div>
+            </div>
+        </div>
+        <!-- news section -->
+        <div class="relative bg-[#FFF2E7] flex flex-col items-center mx-4 my-4 rounded-xl lg:mx-32">
+            <div><img src="images/cute-pet-small.png" alt=""></div>
+            <div class="flex flex-col items-center gap-y-4">
+                <h2 class="adlam text-3xl">Get Pawsome News!</h2>
+                <p class="sora text-xl text-center">Exclusive training tips, ticks, product deals and more.</p>
+                <input class="text-slate-300 sora w-4/5 py-3 px-4 rounded-lg" type="text" value="Enter email...."> <br>
+                <button class="sora relative -top-10 bg-yellow-300 px-5 py-1 rounded-md hover:bg-yellow-500">Subscribe</button>
             </div>
         </div>
     </main>
